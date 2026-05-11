@@ -14,6 +14,8 @@ export const enText: UIText = {
   },
   hero: {
     badge: 'Custom websites and software for real businesses',
+    rotatingPhrases: ['Custom software', 'Clear websites', 'Simple workflows'],
+    titleSuffix: 'for your business.',
     title: 'Custom software for businesses that need more than a template',
     description:
       'We build websites, automations, and internal tools for businesses that want clearer operations, better sales, and less manual work.',
@@ -211,6 +213,8 @@ export const enText: UIText = {
   projectUseCases: [
     {
       title: 'Arcen Aluminio',
+      description: 'Family business specializing in custom aluminum window and door manufacturing and installation.',
+      image: '/projects/arcen-aluminio.webp',
       businessType: 'Landing page - Aluminum openings',
       problem:
         'Website focused on presenting services, showcasing completed work, and enabling direct commercial inquiries.',
@@ -219,6 +223,8 @@ export const enText: UIText = {
     },
     {
       title: 'Come Cabron',
+      description: 'Restaurant with a strong culinary identity and an active social media presence.',
+      image: '/projects/come-cabron.webp',
       businessType: 'Landing page - Gastronomy',
       problem: 'Landing designed to reinforce brand identity and centralize contact channels.',
       solution: 'Visual structure focused on value proposition, location, and clear call to action.',
@@ -226,6 +232,8 @@ export const enText: UIText = {
     },
     {
       title: 'ShapeIt Design',
+      description: 'Studio specializing in automotive design and branding for the vehicle industry.',
+      image: '/projects/shapeit-design.webp',
       businessType: 'Landing page - Automotive design',
       problem: 'Need to present automotive design services with a more professional digital presence.',
       solution: 'Landing page with visual-first sections, services overview, and commercial storytelling.',
@@ -233,6 +241,8 @@ export const enText: UIText = {
     },
     {
       title: 'La Orilla',
+      description: 'Gastronomic venue offering a unique riverside dining experience.',
+      image: '/projects/la-orilla.webp',
       businessType: 'Landing page - Gastronomy',
       problem: 'Website designed to communicate the place experience and simplify customer contact.',
       solution: 'Landing with strong visual narrative, business proposal, and direct contact access.',
@@ -240,6 +250,8 @@ export const enText: UIText = {
     },
     {
       title: 'Webcomse',
+      description: 'Technology product retailer with a diverse catalog and direct commercial support.',
+      image: '/projects/webcomse.webp',
       businessType: 'Landing page - Technology product sales',
       problem: 'Need to present product offering and drive inquiries through a simple commercial structure.',
       solution: 'Landing with sales-oriented sections, featured categories, and contact forms.',
@@ -247,6 +259,8 @@ export const enText: UIText = {
     },
     {
       title: 'Revista Siempre Mujeres',
+      description: 'Fashion and lifestyle editorial brand with an engaged community and original content.',
+      image: '/projects/revista-siempre-mujeres.webp',
       businessType: 'Landing page - Fashion',
       problem: 'Editorial project focused on consolidating brand presence and highlighting core content.',
       solution: 'Landing with editorial sections, visual identity, and clear content access.',
@@ -254,10 +268,22 @@ export const enText: UIText = {
     },
     {
       title: 'Ariic',
+      description: 'Automotive corporation with institutional presence and services across the industry sector.',
+      image: '/projects/ariic.webp',
       businessType: 'Landing page - Automotive corporation',
       problem: 'Institutional website required to present corporate services and improve online positioning.',
       solution: 'Corporate landing focused on trust, service positioning, and commercial contact.',
       benefit: 'Improved institutional image and a clearer digital channel for business leads.',
+    },
+    {
+      title: "It's Legal",
+      description:
+        'A company focused on cybersecurity, intellectual property, compliance, and digital risk prevention.',
+      image: '/projects/its-legal.webp',
+      businessType: 'Landing page - Legal and cybersecurity',
+      problem: 'Need to communicate specialized services clearly and build trust from the first interaction.',
+      solution: 'Institutional landing focused on value proposition, practice areas, and direct contact.',
+      benefit: 'Stronger digital credibility and better client acquisition in high-value sectors.',
     },
   ],
   aboutHighlights: [

@@ -12,6 +12,8 @@ export const esText = {
   },
   hero: {
     badge: 'Webs y software a medida para negocios reales',
+    rotatingPhrases: ['Software a medida', 'Webs dinámicas', 'Procesos simples'],
+    titleSuffix: 'para tu negocio.',
     title: 'Software a medida para negocios con necesidades reales y únicas',
     description:
       'Creamos páginas web, automatizaciones y herramientas internas para negocios que quieren trabajar con más claridad, vender mejor y dejar atrás tareas manuales.',
@@ -209,6 +211,8 @@ export const esText = {
   projectUseCases: [
     {
       title: 'Arcen Aluminio',
+      description: 'Empresa familiar especializada en fabricación e instalación de aberturas de aluminio a medida.',
+      image: '/projects/arcen-aluminio.webp',
       businessType: 'Landing page - Aberturas de aluminio',
       problem: 'Sitio enfocado en presentar servicios, mostrar trabajos y facilitar consultas comerciales.',
       solution: 'Diseño claro con secciones de servicios, galería de proyectos y contacto directo.',
@@ -216,6 +220,8 @@ export const esText = {
     },
     {
       title: 'Come Cabrón',
+      description: 'Restaurante con identidad gastronómica propia y fuerte presencia en redes sociales.',
+      image: '/projects/come-cabron.webp',
       businessType: 'Landing page - Gastronomía',
       problem: 'Landing orientada a reforzar identidad de marca y centralizar canales de contacto.',
       solution: 'Estructura visual enfocada en propuesta gastronómica, ubicación y llamada a la acción.',
@@ -223,6 +229,8 @@ export const esText = {
     },
     {
       title: 'ShapeIt Design',
+      description: 'Estudio especializado en diseño automotriz y branding para el sector del automóvil.',
+      image: '/projects/shapeit-design.webp',
       businessType: 'Landing page - Diseño automotriz',
       problem: 'Necesidad de mostrar servicios de diseño automotriz con una presencia más profesional.',
       solution: 'Landing con enfoque visual, bloques de servicios y narrativa comercial del estudio.',
@@ -230,6 +238,8 @@ export const esText = {
     },
     {
       title: 'La Orilla',
+      description: 'Espacio gastronómico con propuesta de experiencia única a orillas del río.',
+      image: '/projects/la-orilla.webp',
       businessType: 'Landing page - Gastronomía',
       problem: 'Web pensada para comunicar la experiencia del lugar y simplificar el contacto.',
       solution: 'Landing con foco en contenido visual, propuesta del negocio y acceso rápido a contacto.',
@@ -237,6 +247,8 @@ export const esText = {
     },
     {
       title: 'Webcomse',
+      description: 'Empresa de venta de productos tecnológicos con catálogo diverso y atención comercial directa.',
+      image: '/projects/webcomse.webp',
       businessType: 'Landing page - Venta de productos tecnológicos',
       problem: 'Necesidad de exponer oferta comercial y canalizar consultas de forma simple.',
       solution: 'Landing con estructura comercial, categorías destacadas y formularios de contacto.',
@@ -244,6 +256,8 @@ export const esText = {
     },
     {
       title: 'Revista Siempre Mujeres',
+      description: 'Publicación editorial de moda y actualidad con comunidad activa y contenido propio.',
+      image: '/projects/revista-siempre-mujeres.webp',
       businessType: 'Landing page - Moda',
       problem: 'Proyecto editorial para consolidar presencia de marca y destacar contenido principal.',
       solution: 'Landing con secciones editoriales, identidad visual y acceso a contenido clave.',
@@ -251,10 +265,23 @@ export const esText = {
     },
     {
       title: 'Ariic',
+      description: 'Corporación automotriz con presencia institucional y servicios para el sector industria.',
+      image: '/projects/ariic.webp',
       businessType: 'Landing page - Corporación automotriz',
       problem: 'Sitio institucional para presentar servicios corporativos y mejorar posicionamiento online.',
       solution: 'Landing corporativa con enfoque en confianza, servicios y formulario comercial.',
       benefit: 'Mejor imagen institucional y canal digital más claro para contactos de negocio.',
+    },
+    {
+      title: "It's Legal",
+      description:
+        'Empresa especializada en ciberseguridad, propiedad intelectual, compliance y prevención de riesgos digitales.',
+      image: '/projects/its-legal.webp',
+      businessType: 'Landing page - Legal y ciberseguridad',
+      problem:
+        'Necesidad de comunicar servicios especializados con claridad y generar confianza desde el primer contacto.',
+      solution: 'Landing institucional con foco en propuesta de valor, áreas de práctica y contacto directo.',
+      benefit: 'Mayor credibilidad digital y mejor captación de clientes en sectores de alto valor.',
     },
   ],
   aboutHighlights: [

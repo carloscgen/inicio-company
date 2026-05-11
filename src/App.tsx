@@ -6,9 +6,12 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Process } from '@/components/Process'
+import { ProcessCarousel } from '@/components/ProcessCarousel'
 import { Projects } from '@/components/Projects'
+import { ProjectsCarousel } from '@/components/ProjectsCarousel'
 import { Positioning } from '@/components/Positioning'
 import { Sectors } from '@/components/Sectors'
+import { SectorsCarousel } from '@/components/SectorsCarousel'
 import { Services } from '@/components/Services'
 import { WorkDetail } from '@/components/WorkDetail'
 import { LanguageProvider } from '@/i18n/language-context'
@@ -39,9 +42,12 @@ function App() {
           <BusinessSection />
           <WorkDetail />
           <Services />
-          <Sectors />
-          <Process />
-          <Projects />
+          {/* <Sectors /> */}
+          <SectorsCarousel />
+          {/* <Process /> */}
+          <ProcessCarousel />
+          {/* <Projects /> */}
+          <ProjectsCarousel />
           {/* <About /> */}
           <CTA />
         </main>

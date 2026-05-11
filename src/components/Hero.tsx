@@ -1,5 +1,7 @@
+import { useEffect, useState } from 'react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
+import { cn } from '@/lib/utils'
 import { useI18n } from '@/i18n/use-i18n'
 import { Reveal } from '@/components/Reveal'
 import { SectionBadge } from '@/components/SectionBadge'
@@ -7,20 +9,42 @@ import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   const { content } = useI18n()
+  const phrases = content.hero.rotatingPhrases
+  const [phraseIndex, setPhraseIndex] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false)
+      setTimeout(() => {
+        setPhraseIndex((i) => (i + 1) % phrases.length)
+        setVisible(true)
+      }, 280)
+    }, 3600)
+    return () => clearInterval(interval)
+  }, [phrases.length])
 
   return (
     <section id='inicio' className='relative overflow-hidden pb-24 pt-24 sm:pb-32 sm:pt-28'>
       <div className="absolute inset-0 -z-30 bg-[url('/1b.webp')] bg-cover bg-center" />
-      <div className='absolute inset-0 -z-20 bg-[linear-gradient(118deg,rgba(28,35,43,0.34)_0%,rgba(20,25,32,0.36)_54%,rgba(23,28,36,0.38)_100%)] dark:bg-[linear-gradient(118deg,rgba(28,35,43,0.34)_0%,rgba(20,25,32,0.36)_54%,rgba(23,28,36,0.38)_100%)]' />
+      <div className='absolute inset-0 -z-20 bg-[linear-gradient(118deg,rgba(28,35,43,0.64)_0%,rgba(20,25,32,0.66)_54%,rgba(23,28,36,0.68)_100%)] dark:bg-[linear-gradient(118deg,rgba(28,35,43,0.64)_0%,rgba(20,25,32,0.66)_54%,rgba(23,28,36,0.68)_100%)]' />
 
       <div className='section-shell'>
         <Reveal className='space-y-10'>
           <div className='space-y-4'>
-            <SectionBadge className='border-border/80 bg-background/82 text-foreground dark:border-primary/30 dark:bg-background/70 dark:text-primary'>
+            <SectionBadge className='border-foreground/80 bg-foreground/82 text-background dark:border-primary/30 dark:bg-background/70 dark:text-primary'>
               {content.hero.badge}
             </SectionBadge>
             <h1 className='max-w-4/5 text-balance text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl'>
-              {content.hero.title}
+              <span
+                className={cn(
+                  'text-primary transition-opacity duration-[280ms] ease-in-out',
+                  visible ? 'opacity-100' : 'opacity-0'
+                )}
+              >
+                {phrases[phraseIndex]}
+              </span>{' '}
+              {content.hero.titleSuffix}
             </h1>
             <p className='max-w-2xl text-pretty text-base leading-relaxed text-white/85 sm:text-lg'>
               {content.hero.description}
@@ -42,7 +66,7 @@ const Hero = () => {
               asChild
               size='lg'
               variant='outline'
-              className='rounded-full border-border bg-background/92 px-6 text-foreground hover:bg-muted'
+              className='rounded-full px-6 border-foreground/80 bg-foreground/82 text-background hover:bg-muted dark:text-primary'
             >
               <a href='#servicios'>{content.hero.secondaryCta}</a>
             </Button>
@@ -52,7 +76,7 @@ const Hero = () => {
             {content.hero.highlights.map((highlight) => (
               <div
                 key={highlight}
-                className='inline-flex items-center gap-2 rounded-full border border-border/80 bg-background/90 px-3 py-1.5 text-sm text-foreground'
+                className='inline-flex items-center gap-2 rounded-full border border-foreground/80 bg-foreground/82 text-background dark:border-border/80 dark:bg-background/90 px-3 py-1.5 text-sm dark:text-foreground'
               >
                 <CheckCircle2 className='size-4 text-primary' />
                 {highlight}
